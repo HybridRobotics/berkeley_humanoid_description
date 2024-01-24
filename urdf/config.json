@@ -1,0 +1,39 @@
+{
+    "documentId": "8cfa1b31d8767219fe1723ba",
+    "assemblyName": "Simplified",
+    "outputFormat": "urdf",
+    "mergeSTLs": "all",
+    "simplifySTLs": "all",
+    "packageName": "cal_hum_description/meshs",
+    "jointMaxEffort": {
+        "LL_HR": 60,
+        "LL_HAA": 60,
+        "LL_HFE": 90,
+        "LL_KFE": 120,
+        "LL_FFE": 60,
+        "LL_FAA": 18,
+        "LR_HR": 60,
+        "LR_HAA": 60,
+        "LR_HFE": 90,
+        "LR_KFE": 120,
+        "LR_FFE": 60,
+        "LR_FAA": 18
+    },
+    "jointMaxVelocity": {
+        "LL_HR": 23,
+        "LL_HAA": 23,
+        "LL_HFE": 20,
+        "LL_KFE": 14,
+        "LL_FFE": 20,
+        "LL_FAA": 42,
+        "LR_HR": 23,
+        "LR_HAA": 23,
+        "LR_HFE": 20,
+        "LR_KFE": 14,
+        "LR_FFE": 23,
+        "LR_FAA": 42
+    },
+    "postImportCommands": [
+        "mv *_visual.stl *_collision.stl ../meshs && rm *.stl && rm *.part"
+    ]
+}
