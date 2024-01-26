@@ -2,7 +2,6 @@
     "documentId": "8cfa1b31d8767219fe1723ba",
     "assemblyName": "Simplified",
     "outputFormat": "urdf",
-    "mergeSTLs": "all",
     "simplifySTLs": "all",
     "packageName": "cal_hum_description/meshs",
     "jointMaxEffort": {
@@ -34,6 +33,6 @@
         "LR_FAA": 42
     },
     "postImportCommands": [
-        "mv *_visual.stl *_collision.stl ../meshs && rm *.stl && rm *.part"
+        "rm ../meshs/*.stl && mv *.stl ../meshs && rm  *.part"
     ]
 }
