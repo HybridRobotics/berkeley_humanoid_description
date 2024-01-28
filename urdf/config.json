@@ -32,6 +32,7 @@
         "LR_FFE": 23,
         "LR_FAA": 42
     },
+    "additionalUrdfFile": "gazebo.urdf",
     "postImportCommands": [
         "rm ../meshs/*.stl && mv *.stl ../meshs && rm  *.part"
     ]
