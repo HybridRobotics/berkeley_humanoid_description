@@ -1,7 +1,7 @@
 <launch>
 
     <!-- Name of the robot description parameter -->
-    <arg name="description_name"         default="cal_hum_description"/>
+    <arg name="description_name"         default="legged_robot_description"/>
     <!-- Set robot description path -->
     <arg name="description_file"         default="$(find cal_hum_description)/urdf/robot.urdf"/>
 
@@ -16,5 +16,5 @@
 
     <!-- push robot_description to factory and spawn robot in gazebo -->
     <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" clear_params="true"
-          args="-z 0.6 -param cal_hum_description -urdf -model cal_hum" output="screen"/>
+          args="-z 0.7 -param $(arg description_name) -urdf -model cal_hum" output="screen"/>
 </launch>
