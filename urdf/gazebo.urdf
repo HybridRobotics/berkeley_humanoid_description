@@ -1,7 +1,7 @@
 <gazebo reference="ll_faa">
     <mu1>0.7</mu1>
     <mu2>0.7</mu2>
-    <self_collide>1</self_collide>
+    <self_collide>0</self_collide>
     <material>Gazebo/DarkGrey</material>
     <kp value="1000000.0"/>
     <kd value="100.0"/>
@@ -10,7 +10,7 @@
 <gazebo reference="lr_faa">
 <mu1>0.7</mu1>
 <mu2>0.7</mu2>
-<self_collide>1</self_collide>
+<self_collide>0</self_collide>
 <material>Gazebo/DarkGrey</material>
 <kp value="1000000.0"/>
 <kd value="100.0"/>
@@ -157,5 +157,3 @@
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
 </actuator>
 </transmission>
-
-        </robot>

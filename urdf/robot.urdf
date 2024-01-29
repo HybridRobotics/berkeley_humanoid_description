@@ -70,6 +70,18 @@
 </material>
 </visual>
 <!-- Shapes for ll_hfe -->
+<collision>
+<origin xyz="9.6168696995857505527e-05 -2.8714274571961517779e-07 0.054200000000005424394" rpy="3.1415926535897855665 -6.0836744561200820005e-15 1.570796326794896558" />
+<geometry>
+<cylinder length="0.089999999999999996669" radius="0.061499999999999999112" />
+</geometry>
+</collision>
+<collision>
+<origin xyz="-0.11490383130300418912 -2.8714274575084020036e-07 0.059200000000004485146" rpy="3.1415926535897855665 -6.0836744561200820005e-15 1.570796326794896558" />
+<geometry>
+<cylinder length="0.080000000000000001665" radius="0.051999999999999997613" />
+</geometry>
+</collision>
 <inertial>
 <origin xyz="-0.053342251303004031837 0.00067071285725437378156 0.040249000000005086264" rpy="0 0 0"/>
 <mass value="3.5233394799999935287" />
@@ -88,6 +100,12 @@
 </material>
 </visual>
 <!-- Shapes for ll_kfe -->
+<collision>
+<origin xyz="-0.056903831303004026587 -0.0011722871427554265589 3.2751579226442117942e-15" rpy="1.5707963267948887864 -6.083674456119109335e-15 1.570796326794896558" />
+<geometry>
+<box size="0.02999999999999999889 0.040000000000000000833 0.16000000000000000333" />
+</geometry>
+</collision>
 <inertial>
 <origin xyz="-0.073422831303004032488 -0.0013121671427554250366 -0.00043913999999683811428" rpy="0 0 0"/>
 <mass value="0.24071601000000050763" />
@@ -166,7 +184,6 @@
 <child link="ll_ffe" />
 <axis xyz="0 0 1"/>
 <limit effort="60" velocity="20" lower="-1.52359877559829881566" upper="1.2217304763960306069"/>
-<dynamics damping="0.1" friction="0.1"/>
 <joint_properties friction="0.0"/>
 </joint>
 
@@ -175,8 +192,7 @@
 <parent link="ll_hfe" />
 <child link="ll_kfe" />
 <axis xyz="0 0 1"/>
-<limit effort="120" velocity="14" lower="0.1" upper="2.0943951023931952626"/>
-<dynamics damping="0.1" friction="0.5"/>
+<limit effort="120" velocity="14" lower="0" upper="2.0943951023931952626"/>
 <joint_properties friction="0.0"/>
 </joint>
 
@@ -254,6 +270,18 @@
 </material>
 </visual>
 <!-- Shapes for lr_hfe -->
+<collision>
+<origin xyz="9.61686969952052495e-05 -2.8714273728538963759e-07 -0.054199999999999512457" rpy="3.1415926535897926719 -2.85792382801746712e-16 1.570796326794896558" />
+<geometry>
+<cylinder length="0.089999999999999996669" radius="0.061499999999999999112" />
+</geometry>
+</collision>
+<collision>
+<origin xyz="-0.11490383130300481362 -2.8714273728365491412e-07 -0.059199999999999544653" rpy="3.1415926535897926719 -2.85792382801746712e-16 1.570796326794896558" />
+<geometry>
+<cylinder length="0.080000000000000001665" radius="0.051999999999999997613" />
+</geometry>
+</collision>
 <inertial>
 <origin xyz="-0.05334225130300464246 0.00067071285726267443339 -0.040248999999999146571" rpy="0 0 0"/>
 <mass value="2.4960000000000071019" />
@@ -272,6 +300,12 @@
 </material>
 </visual>
 <!-- Shapes for lr_kfe -->
+<collision>
+<origin xyz="-0.056903831303005414366 -0.001172287142742421337 1.3877787807814456755e-16" rpy="1.570796326794896558 7.0634502777214636062e-33 1.570796326794896558" />
+<geometry>
+<box size="0.02999999999999999889 0.040000000000000000833 0.16000000000000000333" />
+</geometry>
+</collision>
 <inertial>
 <origin xyz="-0.073422831303005364756 -0.0013121671427424232842 0.00043914000000006003788" rpy="0 0 0"/>
 <mass value="0.24100000000000004752" />
@@ -350,7 +384,6 @@
 <child link="lr_ffe" />
 <axis xyz="0 0 1"/>
 <limit effort="60" velocity="23" lower="-1.52359877559829881566" upper="1.2217304763960306069"/>
-<dynamics damping="0.1" friction="0.1"/>
 <joint_properties friction="0.0"/>
 </joint>
 
@@ -359,8 +392,7 @@
 <parent link="lr_hfe" />
 <child link="lr_kfe" />
 <axis xyz="0 0 1"/>
-<limit effort="120" velocity="14" lower="0.1" upper="2.0943951023931952626"/>
-<dynamics damping="0.1" friction="0.5"/>
+<limit effort="120" velocity="14" lower="0" upper="2.0943951023931952626"/>
 <joint_properties friction="0.0"/>
 </joint>
 
@@ -394,41 +426,41 @@
 <gazebo reference="ll_faa">
     <mu1>0.7</mu1>
     <mu2>0.7</mu2>
-    <self_collide>1</self_collide>
+    <self_collide>0</self_collide>
     <material>Gazebo/DarkGrey</material>
     <kp value="1000000.0"/>
     <kd value="100.0"/>
 </gazebo>
 
 <gazebo reference="lr_faa">
-    <mu1>0.7</mu1>
-    <mu2>0.7</mu2>
-    <self_collide>1</self_collide>
-    <material>Gazebo/DarkGrey</material>
-    <kp value="1000000.0"/>
-    <kd value="100.0"/>
+<mu1>0.7</mu1>
+<mu2>0.7</mu2>
+<self_collide>0</self_collide>
+<material>Gazebo/DarkGrey</material>
+<kp value="1000000.0"/>
+<kd value="100.0"/>
 </gazebo>
 
 <!-- ros_control plugin -->
 <gazebo>
-    <plugin name="gazebo_ros_control" filename="liblegged_hw_sim.so">
-        <robotNamespace>/</robotNamespace>
-        <robotParam>legged_robot_description</robotParam>
-        <robotSimType>legged_gazebo/LeggedHWSim</robotSimType>
-    </plugin>
+<plugin name="gazebo_ros_control" filename="liblegged_hw_sim.so">
+    <robotNamespace>/</robotNamespace>
+    <robotParam>legged_robot_description</robotParam>
+    <robotSimType>legged_gazebo/LeggedHWSim</robotSimType>
+</plugin>
 </gazebo>
 
 <gazebo>
-    <plugin name="p3d_base_controller" filename="libgazebo_ros_p3d.so">
-        <alwaysOn>true</alwaysOn>
-        <updateRate>1000.0</updateRate>
-        <bodyName>torso</bodyName>
-        <topicName>ground_truth/state</topicName>
-        <gaussianNoise>0</gaussianNoise>
-        <frameName>world</frameName>
-        <xyzOffsets>0 0 0</xyzOffsets>
-        <rpyOffsets>0 0 0</rpyOffsets>
-    </plugin>
+<plugin name="p3d_base_controller" filename="libgazebo_ros_p3d.so">
+    <alwaysOn>true</alwaysOn>
+    <updateRate>1000.0</updateRate>
+    <bodyName>torso</bodyName>
+    <topicName>ground_truth/state</topicName>
+    <gaussianNoise>0</gaussianNoise>
+    <frameName>world</frameName>
+    <xyzOffsets>0 0 0</xyzOffsets>
+    <rpyOffsets>0 0 0</rpyOffsets>
+</plugin>
 </gazebo>
 
 <transmission name="LL_HR_tran">
