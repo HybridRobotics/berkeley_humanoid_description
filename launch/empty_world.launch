@@ -5,6 +5,8 @@
     <!-- Set robot description path -->
     <arg name="description_file"         default="$(find cal_hum_description)/urdf/robot.urdf"/>
 
+    <rosparam file="$(find cal_hum_description)/config/default.yaml" command="load"/>
+
     <!-- Load robot description -->
     <include file="$(find cal_hum_description)/launch/load.launch">
         <arg name="description_name" value="$(arg description_name)"/>
