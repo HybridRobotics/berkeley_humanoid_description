@@ -1,9 +1,9 @@
 <launch>
 
     <!-- Name of the robot description parameter -->
-    <arg name="description_name"         default="legged_robot_description"/>
+    <arg name="description_name" default="legged_robot_description"/>
     <!-- Set robot description path -->
-    <arg name="description_file"         default="$(find cal_hum_description)/urdf/robot.urdf"/>
+    <arg name="description_file" default="$(find cal_hum_description)/urdf/robot.urdf"/>
 
     <rosparam file="$(find cal_hum_description)/config/default.yaml" command="load"/>
 
@@ -14,9 +14,24 @@
     </include>
 
     <include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <arg name="paused" value="true"/>
     </include>
 
     <!-- push robot_description to factory and spawn robot in gazebo -->
     <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" clear_params="true"
-          args="-z 0.7 -param $(arg description_name) -urdf -model cal_hum" output="screen"/>
+          args="-param $(arg description_name) -urdf -model cal_hum
+          -z 0.506
+          -J LL_HR -0.083
+          -J LL_HAA 0.083
+          -J LL_HFE -0.397
+          -J LL_KFE 0.822
+          -J LL_FFE -0.487
+          -J LL_FAA 0.117
+          -J LR_HR  0.083
+          -J LR_HAA -0.083
+          -J LR_HFE -0.397
+          -J LR_KFE 0.822
+          -J LR_FFE -0.487
+          -J LR_FAA -0.117
+          " output="screen"/>
 </launch>
