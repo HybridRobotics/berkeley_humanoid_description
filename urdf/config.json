@@ -1,5 +1,6 @@
 {
     "documentId": "8cfa1b31d8767219fe1723ba",
+    "workspaceId": "fa9d8ae5d0a1cade6f0bf12a",
     "assemblyName": "Simplified",
     "outputFormat": "urdf",
     "simplifySTLs": "all",
