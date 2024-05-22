@@ -25,13 +25,13 @@
           -J LL_HAA 0.083
           -J LL_HFE -0.397
           -J LL_KFE 0.822
-          -J LL_FFE -0.487
+          -J LL_FFE -0.349
           -J LL_FAA 0.117
           -J LR_HR  0.083
           -J LR_HAA -0.083
           -J LR_HFE -0.397
           -J LR_KFE 0.822
-          -J LR_FFE -0.487
+          -J LR_FFE -0.349
           -J LR_FAA -0.117
           " output="screen"/>
 </launch>
