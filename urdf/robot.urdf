@@ -192,7 +192,7 @@
 <parent link="ll_hfe" />
 <child link="ll_kfe" />
 <axis xyz="0 0 1"/>
-<limit effort="120" velocity="14" lower="0" upper="2.0943951023931952626"/>
+<limit effort="120" velocity="14" lower="0.1" upper="2.0943951023931952626"/>
 <joint_properties friction="0.0"/>
 </joint>
 
@@ -392,7 +392,7 @@
 <parent link="lr_hfe" />
 <child link="lr_kfe" />
 <axis xyz="0 0 1"/>
-<limit effort="120" velocity="14" lower="0" upper="2.0943951023931952626"/>
+<limit effort="120" velocity="14" lower="0.1" upper="2.0943951023931952626"/>
 <joint_properties friction="0.0"/>
 </joint>
 
