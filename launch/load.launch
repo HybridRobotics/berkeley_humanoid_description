@@ -8,7 +8,7 @@
   <arg name="description_file"           default="$(find berkeley_humanoid_description)/urdf/robot.urdf"/>
 
 
-  <!-- Run xacro script to generate ANYmal description -->
+  <!-- Run xacro script to generate Berkeley Humanoid description -->
   <param name="$(arg description_name)" textfile="$(arg description_file)"/>
 
 </launch>
