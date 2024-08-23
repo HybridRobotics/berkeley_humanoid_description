@@ -4,7 +4,7 @@
     "assemblyName": "Simplified",
     "outputFormat": "urdf",
     "simplifySTLs": "all",
-    "packageName": "cal_hum_description/meshs",
+    "packageName": "berkeley_humanoid_description/meshs",
     "jointMaxEffort": {
         "LL_HR": 20,
         "LL_HAA": 20,

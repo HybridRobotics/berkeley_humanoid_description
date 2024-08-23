@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5.1)
-project(cal_hum_description)
+project(berkeley_humanoid_description)
 
 find_package(catkin)
 

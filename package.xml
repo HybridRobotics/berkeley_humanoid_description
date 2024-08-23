@@ -2,7 +2,7 @@
 
 <package format="2">
 
-  <name>cal_hum_description</name>
+  <name>berkeley_humanoid_description</name>
   <version>1.0.1</version>
   <description>Cal Humanoid Description Package</description>
 

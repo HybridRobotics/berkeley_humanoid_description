@@ -5,12 +5,12 @@
   <!-- Name of the robot description parameter -->
   <arg name="description_name"         default="legged_description"/>
   <!-- Set robot description path -->
-  <arg name="description_file"         default="$(find cal_hum_description)/urdf/robot.urdf"/>
+  <arg name="description_file"         default="$(find berkeley_humanoid_description)/urdf/robot.urdf"/>
   <!-- Joint state topic name -->
   <arg name="joint_states_topic"       default="/joint_states"/>
 
   <!-- Load robot description -->
-  <include file="$(find cal_hum_description)/launch/load.launch">
+  <include file="$(find berkeley_humanoid_description)/launch/load.launch">
     <arg name="description_name" value="$(arg description_name)"/>
     <arg name="description_file" value="$(arg description_file)"/>
   </include>
@@ -33,7 +33,7 @@
 
   <!-- RViz -->
   <node name="rviz" pkg="rviz" type="rviz"
-        args="-d $(find cal_hum_description)/config/rviz/standalone.rviz"
+        args="-d $(find berkeley_humanoid_description)/config/rviz/standalone.rviz"
         output="screen"/>
 
 </launch>

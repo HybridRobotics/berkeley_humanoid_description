@@ -3,7 +3,7 @@
 <visual>
 <origin xyz="0 0 0" rpy="0 -0 0" />
 <geometry>
-<mesh filename="package://cal_hum_description/meshs/torso.stl"/>
+<mesh filename="package://berkeley_humanoid_description/meshs/torso.stl"/>
 </geometry>
 <material name="torso_material">
 <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
@@ -27,7 +27,7 @@
 <visual>
 <origin xyz="8.3411161867551695001e-17 -0.069999999999999854006 1.5210270693501456768e-16" rpy="-4.7960273332227889665e-28 -0.78539816339744961127 -2.5931996357134510914e-31" />
 <geometry>
-<mesh filename="package://cal_hum_description/meshs/ll_hr.stl"/>
+<mesh filename="package://berkeley_humanoid_description/meshs/ll_hr.stl"/>
 </geometry>
 <material name="ll_hr_material">
 <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
@@ -45,7 +45,7 @@
 <visual>
 <origin xyz="0.064999999999999572009 -0.069999999999999742983 0.015799999999995966576" rpy="4.2166986512874552266e-15 0.785398163397448279 5.1233902195250893073e-31" />
 <geometry>
-<mesh filename="package://cal_hum_description/meshs/ll_haa.stl"/>
+<mesh filename="package://berkeley_humanoid_description/meshs/ll_haa.stl"/>
 </geometry>
 <material name="ll_haa_material">
 <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
@@ -69,7 +69,7 @@
 <visual>
 <origin xyz="0.10309616869699468611 -0.011172287142745998545 -0.085799999999994921995" rpy="1.5707963267949038855 1.74899230643811231e-14 1.570796326794896558" />
 <geometry>
-<mesh filename="package://cal_hum_description/meshs/ll_hfe.stl"/>
+<mesh filename="package://berkeley_humanoid_description/meshs/ll_hfe.stl"/>
 </geometry>
 <material name="ll_hfe_material">
 <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
@@ -99,7 +99,7 @@
 <visual>
 <origin xyz="0.3230961686969961999 -0.011172287143240726068 -0.15999999999999256484" rpy="1.5707963267948958919 -1.8203544808569294933e-14 1.570796326794896558" />
 <geometry>
-<mesh filename="package://cal_hum_description/meshs/ll_kfe.stl"/>
+<mesh filename="package://berkeley_humanoid_description/meshs/ll_kfe.stl"/>
 </geometry>
 <material name="ll_kfe_material">
 <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
@@ -123,7 +123,7 @@
 <visual>
 <origin xyz="0.50309616869699824715 -0.011172287143647298413 -0.15999999999998817946" rpy="1.5707963267948958919 -1.8203544808569294933e-14 1.570796326794896558" />
 <geometry>
-<mesh filename="package://cal_hum_description/meshs/ll_ffe.stl"/>
+<mesh filename="package://berkeley_humanoid_description/meshs/ll_ffe.stl"/>
 </geometry>
 <material name="ll_ffe_material">
 <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
@@ -141,7 +141,7 @@
 <visual>
 <origin xyz="-0.15999999999998909539 0.50309616869699735897 -0.028672287143649135416" rpy="-1.570796326794896558 -1.570796326794896558 0" />
 <geometry>
-<mesh filename="package://cal_hum_description/meshs/ll_faa.stl"/>
+<mesh filename="package://berkeley_humanoid_description/meshs/ll_faa.stl"/>
 </geometry>
 <material name="ll_faa_material">
 <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
@@ -239,7 +239,7 @@
 <visual>
 <origin xyz="9.8130778667825160077e-17 0.070000000000000062172 1.7663540160183579609e-16" rpy="-1.80256122170187935e-27 -0.7853981633974492782 -1.8367624050141598029e-31" />
 <geometry>
-<mesh filename="package://cal_hum_description/meshs/lr_hr.stl"/>
+<mesh filename="package://berkeley_humanoid_description/meshs/lr_hr.stl"/>
 </geometry>
 <material name="lr_hr_material">
 <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
@@ -257,7 +257,7 @@
 <visual>
 <origin xyz="0.064999999999999585887 0.070000000000000159317 0.015799999999996452299" rpy="3.365885708303340778e-15 0.78539816339744861207 1.2683748906114756047e-31" />
 <geometry>
-<mesh filename="package://cal_hum_description/meshs/lr_haa.stl"/>
+<mesh filename="package://berkeley_humanoid_description/meshs/lr_haa.stl"/>
 </geometry>
 <material name="lr_haa_material">
 <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
@@ -281,7 +281,7 @@
 <visual>
 <origin xyz="0.10309616869699547714 -0.011172287142743415542 0.085800000000000278821" rpy="1.5707963267948978903 2.4663018163742551871e-15 1.570796326794896558" />
 <geometry>
-<mesh filename="package://cal_hum_description/meshs/lr_hfe.stl"/>
+<mesh filename="package://berkeley_humanoid_description/meshs/lr_hfe.stl"/>
 </geometry>
 <material name="lr_hfe_material">
 <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
@@ -311,7 +311,7 @@
 <visual>
 <origin xyz="0.32309616869699464559 -0.011172287142751816807 0.16000000000000005884" rpy="1.570796326794896558 2.0387620342698703042e-30 1.570796326794896558" />
 <geometry>
-<mesh filename="package://cal_hum_description/meshs/lr_kfe.stl"/>
+<mesh filename="package://berkeley_humanoid_description/meshs/lr_kfe.stl"/>
 </geometry>
 <material name="lr_kfe_material">
 <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
@@ -335,7 +335,7 @@
 <visual>
 <origin xyz="0.50309616869699469444 -0.011172287142751494149 0.15999999999999989231" rpy="1.570796326794896558 5.0826844163181759162e-31 1.570796326794896558" />
 <geometry>
-<mesh filename="package://cal_hum_description/meshs/lr_ffe.stl"/>
+<mesh filename="package://berkeley_humanoid_description/meshs/lr_ffe.stl"/>
 </geometry>
 <material name="lr_ffe_material">
 <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
@@ -353,7 +353,7 @@
 <visual>
 <origin xyz="0.16000000000000080824 0.50309616869699469444 -0.028672287142751599898" rpy="-1.570796326794896558 -1.570796326794896558 0" />
 <geometry>
-<mesh filename="package://cal_hum_description/meshs/lr_faa.stl"/>
+<mesh filename="package://berkeley_humanoid_description/meshs/lr_faa.stl"/>
 </geometry>
 <material name="lr_faa_material">
 <color rgba="0.91764705882352937127 0.91764705882352937127 0.91764705882352937127 1.0"/>
